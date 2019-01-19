@@ -98,6 +98,15 @@
 .carousel-container > li {
   list-style: none;
 }
+.carousel-image {
+  height: 160px;
+  width: 160px;
+}
+
+.carousel-modal-image {
+  width: 400px;
+  height: 400px;
+}
 #carousel-modal-bg {
   position: absolute;
   top: 0;
