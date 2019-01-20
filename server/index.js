@@ -3,11 +3,13 @@ require('newrelic');
 const express = require('express');
 const bodyParser = require('body-parser');
 const proxy = require('http-proxy-middleware')
+const morgan = require('morgan');
 
 const app = express();
 
 app.use('/restaurants/:id/', express.static(`${__dirname}/../client/dist/`));
 app.use(bodyParser());
+app.use(morgan('dev'));
 
 // app.use('/api/reservations/restaurantID=:restaurantID&date=:date', proxy({ target: 'http://54.183.92.72:3002', changeOrigin: true }));
 // app.use('/api/reservations/', proxy({ target: 'http://54.183.92.72:3002', changeOrigin: true }));
