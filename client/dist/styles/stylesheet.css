@@ -72,18 +72,8 @@
   max-width: 100%;
 }
 
-#photoDiv {
-  margin-top: -155px;
-  z-index: -1;
-  margin-left: 35px;
-}
-
-#carousel-logo {
-  display: none !important;
-}
-
 /* ---------------------- CAROUSEL ------------------------------ */
-
+/* --------------------  CONTAINER AND MODAL STYLING  --------------------  */
 .carousel-container {
   font-family: Helvetica, sans-serif;
   text-align: center;
@@ -95,18 +85,16 @@
   display: flex;
   flex-direction: column;
 }
+
 .carousel-container > li {
   list-style: none;
 }
+
 .carousel-image {
   height: 160px;
   width: 160px;
 }
 
-.carousel-modal-image {
-  width: 400px;
-  height: 400px;
-}
 #carousel-modal-bg {
   position: absolute;
   top: 0;
@@ -118,6 +106,12 @@
   align-items: center;
   background-color: rgba(0,0,0,0.3);
 }
+
+.carousel-modal-image {
+  width: 400px;
+  height: 400px;
+}
+
 #next-Btn {
   position: relative;
   z-index: 999;
@@ -127,6 +121,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
+
 #prev-Btn {
   position: relative;
   left: 46px;
@@ -136,9 +131,8 @@
   background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
+
 #carousel-modal-style {
-  margin-top: 800px;
-  z-index: 99;
   padding: 20px;
   background: #fff;
   border-radius: 2px;
@@ -150,17 +144,19 @@
   justify-self: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16) 0 3px 6px rgba(0,0,0,0.23)
 }
+
 /* --------------------  NAV BAR STYLING  --------------------  */
+
 table {
   display: flex;
 }
+
 .carousel-header-nav {
   width: auto;
-  margin-left: none;
   margin-right: auto;
   display: flex;
-  justify-content: flex
 }
+
 #carousel-logo {
   padding-top: none;
   margin-top: none;
@@ -171,20 +167,102 @@ table {
   margin-bottom: 10px;
   overflow-y: hidden;
 }
+
 .radio-location {
   padding: 10px;
 }
+
 #filler {
   width: 0%;
 }
+
 #btn-location-radio-icon {
   background-image: url('https://image.flaticon.com/icons/png/512/67/67347.png');
   height: 50px;
   width: 50px;
 }
+
 #carousel-location-nav {
   float: right;
 }
+
+/* --------------------  LOWER NAV BAR STYLES  --------------------  */
+
+#carousel-tile {
+  list-style: none;
+}
+
+.photo-description {
+  display: flex;
+}
+
+.photo-description > div {
+  float: right;
+}
+
+/* --------------------  BUTTONS  --------------------  */
+
+#arrow-down #arrow-right {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#map-marker {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+#location-one-btn {
+  margin-right: 5px;
+}
+
+#location-two-btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#sign-up-btn {
+  background-color: #317a9b;
+  height: 30px;
+  width: 70px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#signIn-btn-container {
+  margin-left: 144px;
+}
+
+#sign-in-btn {
+  height: ;
+  border-style: none;
+  border-bottom: ;
+
+}
+
+#search-btn {
+  background: none;
+  background: #fff;
+}
+
+#prev-btn {
+  font-size: 20px
+}
+
+#next-btn {
+  font-size: 20px;
+}
+
+#btn-location-one #btn-location-two {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  background: none;
+  margin: 10px;
+  font-size: 20px;
+}
+
+
 /* --------------------  LOWER NAV BAR STYLES  --------------------  */
 #carousel-tile {
   list-style: none;
